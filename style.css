@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-#controls {
+.controls {
     padding: 20px;
     background-color: #eaeaea;
     border: 2px solid #ccc;
@@ -14,7 +14,7 @@
     justify-content: center;
 }
 
-#canvas {
+.canvas {
     margin: 3rem 0 1rem 25rem;
     width: 30rem;
     height: 25rem;

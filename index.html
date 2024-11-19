@@ -3,35 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Editor with Undo/Redo</title>
+    <title>Text Editor with Undo & Redo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div id="controls">
+        <section class="controls" id="controls">
+            <h1>Text Editor</h1>
+            <br>
             <button onclick="undo()">Undo</button>
             <button onclick="redo()">Redo</button>
-        </div>
+        </section>
     </header>
+
     <main>
-        <div id="canvas"></div>
+        <section class="canvas" id="canvas"></section>
     </main>
 
     <footer>
-        <div id="controls">
-        <input type="text" id="text-input" placeholder="Enter your text" />
-        <button onclick="addText()">Add Text</button>
-        
-        <label for="font-selector">Style:</label>
-        <select id="font-selector" onchange="changeFont()">
-        <option value="Arial">Arial</option>
-        <option value="Times New Roman">Times New Roman</option>
-        <option value="Courier New">Courier New</option>
-        </select>
-        
-        <label for="font-size">Size:</label>
-        <input type="number" id="font-size" min="10" max="100" value="16" onchange="changeFontSize()">
-        </div>        
+        <section class="controls" id="controls">
+            <input type="text" id="text-input" placeholder="Enter your text" />
+            <button onclick="addText()">Add Text</button>
+            
+            <label for="font-selector">Style:</label>
+            <select id="font-selector" onchange="changeFont()">
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Courier New">Courier New</option>
+            </select>
+            
+            <label for="font-size">Size:</label>
+            <input type="number" id="font-size" min="10" max="100" value="16" onchange="changeFontSize()">
+        </section>        
     </footer>
     <script src="main.js"></script>
 </body>
